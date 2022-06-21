@@ -20,7 +20,6 @@ const booksSchema = new mongoose.Schema({
     publishedOn:{
         type:Date,
         default:Date.now,
-        required:[true , 'Please add published date']
     },
     language:{
         type:String,
