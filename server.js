@@ -1,6 +1,5 @@
 const mongoose = require('mongoose');
 
-
 // Catching Uncaught Exception Error
 process.on('unCaughtException', err => {
     console.log('Caught Exception');
@@ -16,10 +15,9 @@ mongoose.connect(db,{
     console.log('connected to server!');
 });
 
-const port = process.env.PORT ||8000;
-
-const server = app.listen(port , () => {
-    console.log(`App listening on port ${port}`)
+const PORT = process.env.PORT || 8000;
+const server = app.listen(PORT , () => {
+    console.log(`App listening on port ${PORT}`)
 });
 
 // Error handler for bad request
