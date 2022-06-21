@@ -25,6 +25,7 @@ app.get('/', (req, res) => {
     });
 });
 
+// MAIN ROUTES
 app.use('/api/v1/books' , booksRouter);
 app.use('/api/v1/author' , authorRouter);
 
